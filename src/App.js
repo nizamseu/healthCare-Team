@@ -1,10 +1,10 @@
-import { useEffect } from "react";
 import Doctors from "./componanets/Doctors/Doctors";
-import "font-awesome/css/font-awesome.min.css";
+import "./App.css";
+import Header from "./componanets/Header/Header";
 function App() {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="App">
+      <Header></Header>
       <Doctors></Doctors>;
     </div>
   );

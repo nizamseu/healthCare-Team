@@ -22,7 +22,7 @@ const Doctors = () => {
           <Cart cart={cart}></Cart>
         </div>
       </div>
-      <div style={{ backgroundColor: "#161623" }} className="container">
+      <div className="container">
         <div className="row">
           {doctors.map((doctor) => (
             <DoctorList key={doctor.id} handleAdded={handleAdded} doctor={doctor}></DoctorList>

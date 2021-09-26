@@ -12,7 +12,7 @@ const Cart = (props) => {
         <Card
           style={{
             width: "21.5rem",
-            background: "#F1536E",
+            background: "#3DA5F4",
             color: "white",
             alignItems: "center",
             justifyContent: "center",
@@ -36,8 +36,11 @@ const Cart = (props) => {
           className=" text-center mx-auto m-2 p-1 showName"
         >
           {/* <h2 className="pl-4">Added List</h2> */}
-          <h4 className="mb-1">Added Doctors List</h4>
-          <div className="row mx-1">{fee.length > 0 && fee.map((item) => <Name singleItem={item}></Name>)}</div>
+
+          <div className="row mx-1">
+            <h4 className="my-1">Added Doctors List</h4>
+            {fee.length > 0 && fee.map((item) => <Name singleItem={item}></Name>)}
+          </div>
         </Card>
 
         {/* <Card

@@ -4,10 +4,9 @@
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #35bead;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  color: white;
 }
 
 .cart:hover {
@@ -16,7 +15,7 @@
   color: rgb(0, 0, 0);
   transition: 1s;
 }
-.btn {
+/* .btn {
   background-color: #00c9a7;
   border: none;
-}
+} */

@@ -39,7 +39,7 @@ const Cart = (props) => {
 
           <div className="row mx-1">
             <h4 className="my-1">Added Doctors List</h4>
-            {fee.length > 0 && fee.map((item) => <Name singleItem={item}></Name>)}
+            {fee.length > 0 && fee.map((item) => <Name key={item.id} singleItem={item}></Name>)}
           </div>
         </Card>
 

@@ -24,7 +24,7 @@ const DoctorList = (props) => {
           {l_number}
         </p>
         <h3>
-          <strong>Fees:</strong> <i class="fa fa-solid fa-sack-dollar"></i>
+          <strong>Fee:</strong> <i class="fa fa-solid fa-sack-dollar"></i>
           {fee} TK
         </h3>
 

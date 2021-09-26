@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Doctors from "./componanets/Doctors/Doctors";
-
+import "font-awesome/css/font-awesome.min.css";
 function App() {
   return (
     <div>

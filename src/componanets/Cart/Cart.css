@@ -1,0 +1,16 @@
+.single-cart {
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  width: 12rem;
+  /* background-color: white; */
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px gray;
+}
+.single-cart img {
+  justify-content: start;
+}
+.showName {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

@@ -5,22 +5,28 @@ import "./Doctors.css";
 
 const Doctors = () => {
   const [doctors, setDoctors] = useState([]);
+  const [cart, setCart] = useState([]);
   useEffect(() => {
-    fetch("../doctors.json")
+    fetch("https://raw.githubusercontent.com/nizamseu/rowJsonData/main/doctors.json")
       .then((res) => res.json())
-      .then((data) => doctors(data));
+      .then((data) => setDoctors(data));
   }, []);
+  const handleAdded = (doctor) => {
+    setCart([...cart, doctor]);
+  };
   console.log(doctors);
   return (
-    <div>
-      <div className=" d-flex justify-content-center">
-        <div className="col-md-9">
-          {doctors.map((doctor) => (
-            <DoctorList doctor={doctor}></DoctorList>
-          ))}
+    <div className="w-100 mx-auto">
+      <div className="container">
+        <div>
+          <Cart cart={cart}></Cart>
         </div>
-        <div className="col-md-3">
-          <Cart></Cart>
+      </div>
+      <div style={{ backgroundColor: "#161623" }} className="container">
+        <div className="row">
+          {doctors.map((doctor) => (
+            <DoctorList key={doctor.id} handleAdded={handleAdded} doctor={doctor}></DoctorList>
+          ))}
         </div>
       </div>
     </div>
